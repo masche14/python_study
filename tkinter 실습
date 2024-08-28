@@ -1,0 +1,13 @@
+from tkinter import *
+from tkinter import messagebox
+
+window = Tk()
+
+btnList=[]
+for i in range(3):
+    btnList.append(Button(window, text=f'버튼{i+1}'))
+
+for btn in btnList:
+    btn.pack(side=RIGT)
+
+window.mainloop()
